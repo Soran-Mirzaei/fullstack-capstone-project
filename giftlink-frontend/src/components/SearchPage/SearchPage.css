@@ -1,26 +1,163 @@
-/* Task 1: Style the search input field */
-.search-input {
-    /* Insert specific CSS properties here */
+/* ==========================================
+   Search Page
+   Portfolio Theme (Matches Home/Login/Register)
+========================================== */
+
+body{
+    font-family:'Montserrat',sans-serif;
+    background:#f4f4f4;
+    min-height:100vh;
 }
 
-/* Task 2: Style the search button */
-.search-button {
-    /* Insert specific CSS properties here */
+/* ---------- Search Input ---------- */
+
+.search-input{
+    width:100%;
+    padding:12px 16px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    background:rgba(255,255,255,.9);
+    transition:.3s;
 }
 
-/* Task 3: Customize dropdown filters */
-.dropdown-filter {
-    /* Insert specific CSS properties here */
+.search-input:focus{
+    outline:none;
+    border-color:#1E90FF;
+    box-shadow:0 0 0 .2rem rgba(30,144,255,.2);
 }
 
-/* Task 4: Style the age range slider */
-.age-range-slider {
-    /* Insert specific CSS properties here */
+
+/* ---------- Search Button ---------- */
+
+.search-button{
+    background:#1E90FF;
+    color:white;
+    border:none;
+    border-radius:10px;
+    padding:12px 24px;
+    font-weight:700;
+    transition:.3s;
 }
 
-/* Task 5: Enhance search results cards appearance */
-.search-results-card {
-    /* Insert specific CSS properties here */
+.search-button:hover{
+    background:#f50057;
+    transform:translateY(-2px);
 }
 
-/* Additional placeholders for tasks 6 to 10 */
+
+/* ---------- Dropdown Filters ---------- */
+
+.dropdown-filter{
+    width:100%;
+    padding:12px;
+    border-radius:10px;
+    border:1px solid #ddd;
+    background:rgba(255,255,255,.9);
+    transition:.3s;
+}
+
+.dropdown-filter:focus{
+    outline:none;
+    border-color:#1E90FF;
+    box-shadow:0 0 0 .2rem rgba(30,144,255,.2);
+}
+
+
+/* ---------- Age Slider ---------- */
+
+.age-range-slider{
+    width:100%;
+    cursor:pointer;
+    accent-color:#1E90FF;
+}
+
+
+/* ---------- Search Result Card ---------- */
+
+.search-results-card{
+
+    background:rgba(255,255,255,.75);
+
+    backdrop-filter:blur(8px);
+
+    border:none;
+
+    border-radius:16px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+    transition:.3s;
+}
+
+.search-results-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.18);
+}
+
+
+/* ---------- Image ---------- */
+
+.search-results-card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+}
+
+
+/* ---------- Card Content ---------- */
+
+.search-results-card .card-body{
+
+    padding:20px;
+}
+
+.search-results-card h5{
+
+    color:#1E90FF;
+
+    font-weight:700;
+
+    margin-bottom:12px;
+}
+
+.search-results-card p{
+
+    color:#555;
+
+    line-height:1.6;
+}
+
+
+/* ---------- Button inside Card ---------- */
+
+.search-results-card .btn{
+
+    border-radius:30px;
+
+    padding:10px 22px;
+
+    font-weight:600;
+}
+
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:768px){
+
+    .search-button{
+        width:100%;
+        margin-top:10px;
+    }
+
+    .dropdown-filter{
+        margin-top:10px;
+    }
+
+}
