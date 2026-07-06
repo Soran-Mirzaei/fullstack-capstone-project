@@ -1,0 +1,76 @@
+/* =========================
+   REGISTER CARD (SAME STYLE AS LOGIN)
+========================= */
+
+.register-card {
+    background: rgba(255,255,255,0.92);
+    box-shadow: 0px 12px 30px rgba(0,0,0,0.15);
+    border-radius: 14px;
+    transition: transform 0.2s ease;
+}
+
+.register-card:hover {
+    transform: translateY(-2px);
+}
+
+/* Title */
+.register-card h2 {
+    font-weight: 700;
+    color: #222;
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+.register-card .form-label {
+    font-weight: 600;
+    color: #333;
+}
+
+.register-card input {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.register-card input:focus {
+    border-color: #1E90FF;
+    box-shadow: 0 0 0 0.2rem rgba(30,144,255,0.2);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.register-card .btn-primary {
+    background-color: #1E90FF;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.register-card .btn-primary:hover {
+    background-color: #f50057;
+}
+
+/* optional secondary button (if exists) */
+.register-card .btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    border-radius: 10px;
+}
+
+/* =========================
+   LINK
+========================= */
+
+.register-card a {
+    color: #1E90FF;
+    font-weight: 500;
+}
+
+.register-card a:hover {
+    text-decoration: underline;
+}
